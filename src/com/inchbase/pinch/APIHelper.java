@@ -12,20 +12,26 @@ import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.net.URLEncoder;
-
-import java.util.*;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Date;
+import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Set;
+import java.util.UUID;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
- 
-import com.fasterxml.jackson.annotation.JsonInclude;
+
 import com.fasterxml.jackson.annotation.JsonGetter;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mashape.unirest.http.Unirest;
 public class APIHelper {
     /* used for async execution of API calls using a thread pool */
@@ -490,7 +496,8 @@ public class APIHelper {
      * List of classes that are wrapped directly. This information is need when
      * traversing object trees for reference matching
      */
-    private static final Set<Class> WRAPPER_TYPES = new HashSet(Arrays.asList(
+    @SuppressWarnings({ "unchecked", "rawtypes" })
+	private static final Set<Class> WRAPPER_TYPES = new HashSet(Arrays.asList(
             Boolean.class, Character.class, Byte.class, Short.class, String.class,
             Integer.class, Long.class, Float.class, Double.class, Void.class, File.class));
 
@@ -499,7 +506,7 @@ public class APIHelper {
      * @param clazz The given class
      * @return true if the given class is an autoboxed class e.g., Integer
      */
-    private static boolean isWrapperType(Class clazz) {
+    private static boolean isWrapperType(@SuppressWarnings("rawtypes") Class clazz) {
         return WRAPPER_TYPES.contains(clazz) || clazz.isPrimitive() || clazz.isEnum();
     }
 }

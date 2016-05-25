@@ -5,8 +5,6 @@
  */
 package com.inchbase.pinch.models;
 
-import java.util.*;
-
 public class BuildingBuilder {
     //the instance to build
     private Building building;

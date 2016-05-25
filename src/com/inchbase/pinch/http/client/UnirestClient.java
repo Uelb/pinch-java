@@ -5,20 +5,16 @@
  */
 package com.inchbase.pinch.http.client;
 
-import com.mashape.unirest.http.exceptions.UnirestException;
-import com.mashape.unirest.http.options.*;
+import java.io.InputStream;
+import java.util.Map;
 
 import com.inchbase.pinch.APIException;
-import com.inchbase.pinch.http.client.HttpContext;
 import com.inchbase.pinch.http.request.HttpBodyRequest;
 import com.inchbase.pinch.http.request.HttpMethod;
 import com.inchbase.pinch.http.request.HttpRequest;
 import com.inchbase.pinch.http.response.HttpResponse;
 import com.inchbase.pinch.http.response.HttpStringResponse;
-
-import java.io.File;
-import java.io.InputStream;
-import java.util.Map;
+import com.mashape.unirest.http.exceptions.UnirestException;
 
 public class UnirestClient implements HttpClient {
     /**

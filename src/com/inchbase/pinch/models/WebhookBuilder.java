@@ -5,8 +5,6 @@
  */
 package com.inchbase.pinch.models;
 
-import java.util.*;
-
 public class WebhookBuilder {
     //the instance to build
     private Webhook webhook;

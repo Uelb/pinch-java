@@ -5,16 +5,11 @@
  */
 package com.inchbase.pinch;
 
-import java.io.InputStream;
-
 import com.inchbase.pinch.http.client.HttpContext;
 
 public class APIException extends Exception {
     //UID for serialization
     private static final long serialVersionUID = 6424174253911720338L;
-
-    //private fields
-    private int responseCode;
 
     //private fields
     private HttpContext httpContext;
