@@ -29,7 +29,7 @@ public class Test {
 
 Issues
 ========
-If you have any issues : https://github.com/Inchdev/pinch-java/issues
+If you have any issues : https://github.com/Uelb/pinch-java/issues
 
 Usage
 =======
