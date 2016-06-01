@@ -1,7 +1,7 @@
 /*
  * PinchLib
  *
- * This file was automatically generated for Pinch by APIMATIC v2.0 ( https://apimatic.io ) on 05/25/2016
+ * This file was automatically generated for Pinch by APIMATIC v2.0 ( https://apimatic.io ) on 06/01/2016
  */
 package com.inchbase.pinch.models;
 
@@ -11,7 +11,7 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class Webhook 
         implements java.io.Serializable {
-    private static final long serialVersionUID = 5609823176672584215L;
+    private static final long serialVersionUID = 4612225229603216025L;
     private int id;
     private String url;
     private int webhookType;

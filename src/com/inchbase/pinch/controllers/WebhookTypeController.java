@@ -1,7 +1,7 @@
 /*
  * PinchLib
  *
- * This file was automatically generated for Pinch by APIMATIC v2.0 ( https://apimatic.io ) on 05/25/2016
+ * This file was automatically generated for Pinch by APIMATIC v2.0 ( https://apimatic.io ) on 06/01/2016
  */
 package com.inchbase.pinch.controllers;
 
@@ -69,7 +69,7 @@ public class WebhookTypeController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-            private static final long serialVersionUID = 5329450889573527887L;
+            private static final long serialVersionUID = 5143682065512832647L;
             {
                     put( "user-agent", "APIMATIC 2.0" );
                     put( "accept", "application/json" );

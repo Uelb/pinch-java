@@ -1,7 +1,7 @@
 /*
  * PinchLib
  *
- * This file was automatically generated for Pinch by APIMATIC v2.0 ( https://apimatic.io ) on 05/25/2016
+ * This file was automatically generated for Pinch by APIMATIC v2.0 ( https://apimatic.io ) on 06/01/2016
  */
 package com.inchbase.pinch.controllers;
 
@@ -69,7 +69,7 @@ public class TicketController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-            private static final long serialVersionUID = 5081998465535659603L;
+            private static final long serialVersionUID = 4643760470470289592L;
             {
                     put( "user-agent", "APIMATIC 2.0" );
                     put( "accept", "application/json" );
@@ -161,7 +161,7 @@ public class TicketController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
-            private static final long serialVersionUID = 4841130321973632962L;
+            private static final long serialVersionUID = 4979789822735094045L;
             {
                     put( "ticket_id", ticketId );
             }});
@@ -170,7 +170,7 @@ public class TicketController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-            private static final long serialVersionUID = 5544928157840532509L;
+            private static final long serialVersionUID = 5216409976421004766L;
             {
                     put( "user-agent", "APIMATIC 2.0" );
                     put( "accept", "application/json" );
@@ -269,7 +269,7 @@ public class TicketController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
-            private static final long serialVersionUID = 4966940448033206111L;
+            private static final long serialVersionUID = 5450652237569923830L;
             {
                     put( "ticket_id", ticketId );
             }});
@@ -278,7 +278,7 @@ public class TicketController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-            private static final long serialVersionUID = 5459923078993796660L;
+            private static final long serialVersionUID = 5645165838137355883L;
             {
                     put( "user-agent", "APIMATIC 2.0" );
                     put( "accept", "application/json" );
@@ -289,7 +289,7 @@ public class TicketController extends BaseController {
 
         //load all fields for the outgoing API request
         Map<String, Object> _parameters = new HashMap<String, Object>() {
-            private static final long serialVersionUID = 5296664409197202566L;
+            private static final long serialVersionUID = 4990380819724233647L;
             {
                     put( "intervention_date", interventionDate );
             }
@@ -385,7 +385,7 @@ public class TicketController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
-            private static final long serialVersionUID = 4713839938323066890L;
+            private static final long serialVersionUID = 5349607107435017764L;
             {
                     put( "ticket_id", ticketId );
             }});
@@ -394,7 +394,7 @@ public class TicketController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-            private static final long serialVersionUID = 5631035331165219689L;
+            private static final long serialVersionUID = 5680122318002577097L;
             {
                     put( "user-agent", "APIMATIC 2.0" );
                     put( "accept", "application/json" );
@@ -405,7 +405,7 @@ public class TicketController extends BaseController {
 
         //load all fields for the outgoing API request
         Map<String, Object> _parameters = new HashMap<String, Object>() {
-            private static final long serialVersionUID = 5152138522149124424L;
+            private static final long serialVersionUID = 5146802139108843354L;
             {
                     put( "file", file );
             }
@@ -501,7 +501,7 @@ public class TicketController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
-            private static final long serialVersionUID = 5357106725979925175L;
+            private static final long serialVersionUID = 4768914392721385366L;
             {
                     put( "ticket_id", ticketId );
             }});
@@ -510,7 +510,7 @@ public class TicketController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-            private static final long serialVersionUID = 4951037202237799143L;
+            private static final long serialVersionUID = 4669057193371706281L;
             {
                     put( "user-agent", "APIMATIC 2.0" );
                     put( "accept", "application/json" );
@@ -521,7 +521,7 @@ public class TicketController extends BaseController {
 
         //load all fields for the outgoing API request
         Map<String, Object> _parameters = new HashMap<String, Object>() {
-            private static final long serialVersionUID = 4721632303783953128L;
+            private static final long serialVersionUID = 4640395452235138229L;
             {
                     put( "body", body );
             }
@@ -614,7 +614,7 @@ public class TicketController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
-            private static final long serialVersionUID = 5056474004252439169L;
+            private static final long serialVersionUID = 5332559904178447180L;
             {
                     put( "ticket_id", ticketId );
             }});
@@ -623,7 +623,7 @@ public class TicketController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-            private static final long serialVersionUID = 5709611913913677218L;
+            private static final long serialVersionUID = 5136035209287791344L;
             {
                     put( "user-agent", "APIMATIC 2.0" );
                     put( "accept", "application/json" );
@@ -634,7 +634,7 @@ public class TicketController extends BaseController {
 
         //load all fields for the outgoing API request
         Map<String, Object> _parameters = new HashMap<String, Object>() {
-            private static final long serialVersionUID = 5093539130525594894L;
+            private static final long serialVersionUID = 5079005346926285102L;
             {
                     put( "intervention_date", interventionDate );
             }
@@ -730,7 +730,7 @@ public class TicketController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
-            private static final long serialVersionUID = 4679586423708351798L;
+            private static final long serialVersionUID = 5352246868838080616L;
             {
                     put( "ticket_id", ticketId );
             }});
@@ -739,7 +739,7 @@ public class TicketController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-            private static final long serialVersionUID = 4768612885089203100L;
+            private static final long serialVersionUID = 5651583261554879878L;
             {
                     put( "user-agent", "APIMATIC 2.0" );
                     put( "accept", "application/json" );
@@ -750,7 +750,7 @@ public class TicketController extends BaseController {
 
         //load all fields for the outgoing API request
         Map<String, Object> _parameters = new HashMap<String, Object>() {
-            private static final long serialVersionUID = 4812551758692014502L;
+            private static final long serialVersionUID = 5600639872627603242L;
             {
                     put( "file", file );
             }
@@ -846,7 +846,7 @@ public class TicketController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
-            private static final long serialVersionUID = 4859832217502523302L;
+            private static final long serialVersionUID = 5413260170476677434L;
             {
                     put( "ticket_id", ticketId );
             }});
@@ -855,7 +855,7 @@ public class TicketController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-            private static final long serialVersionUID = 4705830340615556309L;
+            private static final long serialVersionUID = 4808370105010379740L;
             {
                     put( "user-agent", "APIMATIC 2.0" );
                     put( "accept", "application/json" );
@@ -866,7 +866,7 @@ public class TicketController extends BaseController {
 
         //load all fields for the outgoing API request
         Map<String, Object> _parameters = new HashMap<String, Object>() {
-            private static final long serialVersionUID = 5624480606849159037L;
+            private static final long serialVersionUID = 5688882752010212724L;
             {
                     put( "file", file );
             }
@@ -955,7 +955,7 @@ public class TicketController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
-            private static final long serialVersionUID = 5126331755680392839L;
+            private static final long serialVersionUID = 4786573583379992120L;
             {
                     put( "ticket_id", ticketId );
             }});
@@ -964,7 +964,7 @@ public class TicketController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-            private static final long serialVersionUID = 4628876141850976513L;
+            private static final long serialVersionUID = 5044080532393549196L;
             {
                     put( "user-agent", "APIMATIC 2.0" );
                     put( "accept", "application/json" );
@@ -1063,7 +1063,7 @@ public class TicketController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
-            private static final long serialVersionUID = 5404211295559685290L;
+            private static final long serialVersionUID = 5223824639390376612L;
             {
                     put( "ticket_id", ticketId );
             }});
@@ -1072,7 +1072,7 @@ public class TicketController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-            private static final long serialVersionUID = 4652090618208462443L;
+            private static final long serialVersionUID = 4893864978178170027L;
             {
                     put( "user-agent", "APIMATIC 2.0" );
                     put( "X-API-TOKEN", Configuration.xAPITOKEN );
@@ -1082,7 +1082,7 @@ public class TicketController extends BaseController {
 
         //load all fields for the outgoing API request
         Map<String, Object> _parameters = new HashMap<String, Object>() {
-            private static final long serialVersionUID = 4672928540373965197L;
+            private static final long serialVersionUID = 5226583242436080579L;
             {
                     put( "file", file );
             }
@@ -1111,6 +1111,107 @@ public class TicketController extends BaseController {
                         } catch (APIException error) {
                             //let the caller know of the error
                             callBack.onFailure(_context, error);
+                        } catch (Exception exception) {
+                            //let the caller know of the caught Exception
+                            callBack.onFailure(_context, exception);
+                        }
+                    }
+                    public void onFailure(HttpContext _context, Throwable _error) {
+                        //let the caller know of the failure
+                        callBack.onFailure(_context, _error);
+                    }
+                });
+            }
+        };
+
+        //execute async using thread pool
+        APIHelper.getScheduler().execute(_responseTask);
+    }
+
+    /**
+     * Get the documents of a ticket related to the intervention (No invoice, no quote)
+     * @param    ticketId    Required parameter: Example: 
+     * @return	Returns the List<Document> response from the API call 
+     */
+    public List<Document> documents(
+                final String ticketId
+    ) throws Throwable {	
+		APICallBackCatcher<List<Document>> callback = new APICallBackCatcher<List<Document>>();
+		documentsAsync(ticketId, callback);
+		if(!callback.isSuccess())
+			throw callback.getError();
+		return callback.getResult();
+	}
+
+    /**
+     * Get the documents of a ticket related to the intervention (No invoice, no quote)
+     * @param    ticketId    Required parameter: Example: 
+     * @return	Returns the void response from the API call 
+     */
+    public void documentsAsync(
+                final String ticketId,
+                final APICallBack<List<Document>> callBack
+    ) {
+        //validating required parameters
+        if (null == ticketId)
+            throw new NullPointerException("The parameter \"ticketId\" is a required parameter and cannot be null.");
+
+        //the base uri for api requests
+        String _baseUri = Configuration.baseUri;
+
+        //prepare query string for API call
+        StringBuilder _queryBuilder = new StringBuilder(_baseUri);
+        _queryBuilder.append("/tickets/{ticket_id}/documents");
+
+        //process template parameters
+        APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
+            private static final long serialVersionUID = 5127012941201114105L;
+            {
+                    put( "ticket_id", ticketId );
+            }});
+        //validate and preprocess url
+        String _queryUrl = APIHelper.cleanUrl(_queryBuilder);
+
+        //load all headers for the outgoing API request
+        Map<String, String> _headers = new HashMap<String, String>() {
+            private static final long serialVersionUID = 5128972792860017400L;
+            {
+                    put( "user-agent", "APIMATIC 2.0" );
+                    put( "accept", "application/json" );
+                    put( "X-API-TOKEN", Configuration.xAPITOKEN );
+                    put( "X-API-EMAIL", Configuration.xAPIEMAIL );
+            }
+        };
+
+        //prepare and invoke the API call request to fetch the response
+        final HttpRequest _request = getClientInstance().get(_queryUrl, _headers, null);
+
+        //Custom Authentication to be added for authorization
+        CustomAuthUtility.appendCustomAuthParams(_request);
+
+        //invoke request and get response
+        Runnable _responseTask = new Runnable() {
+            public void run() {
+                //make the API call
+                getClientInstance().executeAsStringAsync(_request, new APICallBack<HttpResponse>() {
+                    public void onSuccess(HttpContext _context, HttpResponse _response) {
+                        try {
+                            //handle errors defined at the API level
+                            validateResponse(_response, _context);
+
+                            //extract result from the http response
+                            String _responseBody = ((HttpStringResponse)_response).getBody();
+                            List<Document> _result = APIHelper.deserialize(_responseBody,
+                                                        new TypeReference<List<Document>>(){});
+
+                            //let the caller know of the success
+                            callBack.onSuccess(_context, _result);
+                        } catch (APIException error) {
+                            //let the caller know of the error
+                            callBack.onFailure(_context, error);
+                        } catch (IOException ioException) {
+                            //let the caller know of the caught IO Exception
+                            callBack.onFailure(_context, ioException);
                         } catch (Exception exception) {
                             //let the caller know of the caught Exception
                             callBack.onFailure(_context, exception);

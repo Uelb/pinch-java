@@ -1,7 +1,7 @@
 /*
  * PinchLib
  *
- * This file was automatically generated for Pinch by APIMATIC v2.0 ( https://apimatic.io ) on 05/25/2016
+ * This file was automatically generated for Pinch by APIMATIC v2.0 ( https://apimatic.io ) on 06/01/2016
  */
 package com.inchbase.pinch;
 
@@ -61,15 +61,32 @@ public class APIHelper {
     /* used for deserialization of json data */
     public static ObjectMapper mapper = new ObjectMapper()
     {
-        //set the date format for json object mapping
-        { setDateFormat(Configuration.dateFormat); }
-
         private static final long serialVersionUID = -174113593500315394L;
         {
             configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
             setSerializationInclusion(JsonInclude.Include.NON_NULL);
         }
     };
+
+    /**
+     * Parse a date from its string representation
+     * @param date	ISO8601 encodede date string
+     * @return Parsed Date object 
+     */
+    public static Date parseDate(String date)
+    {
+    	return com.fasterxml.jackson.databind.util.ISO8601Utils.parse(date);
+    }
+    
+    /**
+     * Convert a date to an ISO8601 formatted string
+     * @param date Date object to format
+     * @return ISO8601 formatted date string
+     */
+    public static String dateToString(Date date)
+    {
+    	return com.fasterxml.jackson.databind.util.ISO8601Utils.format(date);
+    }
 
     /**
      * JSON Serialization of a given object.
@@ -150,9 +167,9 @@ public class APIHelper {
              else if (pair.getValue() instanceof Collection<?>)
                  replaceValue = flattenCollection("", (Collection<?>) pair.getValue(), "%s%s%s", '/');
              else if (pair.getValue() instanceof Date)
-            	 replaceValue = Configuration.dateFormat.format((Date)pair.getValue());
+            	 replaceValue = tryUrlEncode(dateToString((Date)pair.getValue()));
              else
-                 replaceValue = pair.getValue().toString();
+                 replaceValue = tryUrlEncode(pair.getValue().toString());
 
              //find the template parameter and replace it with its value
              replaceAll(queryBuilder, "{" + pair.getKey() + "}", replaceValue);
@@ -320,10 +337,11 @@ public class APIHelper {
             if (null == element) {
                 elemValue = "";
             } else if (element instanceof Date) {
-                elemValue = Configuration.dateFormat.format((Date)element);
+                elemValue = dateToString((Date)element);
             } else {
                 elemValue = element.toString();
             }
+			elemValue = tryUrlEncode(elemValue);
             builder.append(String.format(fmt, elemName, elemValue, separator));
         }
 
@@ -416,7 +434,7 @@ public class APIHelper {
             loadKeyValuePairForEncoding(key, value, objectMap, processed);
         } else if (obj instanceof Date) {
             String key = objName;
-            String value = Configuration.dateFormat.format((Date)obj);
+            String value = dateToString((Date)obj);
             //UUIDs can be converted to string
             loadKeyValuePairForEncoding(key, value, objectMap, processed);
         } else {

@@ -1,7 +1,7 @@
 /*
  * PinchLib
  *
- * This file was automatically generated for Pinch by APIMATIC v2.0 ( https://apimatic.io ) on 05/25/2016
+ * This file was automatically generated for Pinch by APIMATIC v2.0 ( https://apimatic.io ) on 06/01/2016
  */
 package com.inchbase.pinch.models;
 
@@ -11,7 +11,7 @@ import com.fasterxml.jackson.annotation.JsonSetter;
 
 public class Person 
         implements java.io.Serializable {
-    private static final long serialVersionUID = 5214809607626368529L;
+    private static final long serialVersionUID = 5268110450626245341L;
     private String firstname;
     private String homePhoneNumber;
     private String lastname;

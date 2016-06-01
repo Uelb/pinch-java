@@ -1,7 +1,7 @@
 /*
  * PinchLib
  *
- * This file was automatically generated for Pinch by APIMATIC v2.0 ( https://apimatic.io ) on 05/25/2016
+ * This file was automatically generated for Pinch by APIMATIC v2.0 ( https://apimatic.io ) on 06/01/2016
  */
 package com.inchbase.pinch.controllers;
 
@@ -70,7 +70,7 @@ public class WebhookController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-            private static final long serialVersionUID = 5041130664050171187L;
+            private static final long serialVersionUID = 5143766832906848168L;
             {
                     put( "user-agent", "APIMATIC 2.0" );
                     put( "accept", "application/json" );
@@ -164,7 +164,7 @@ public class WebhookController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-            private static final long serialVersionUID = 5306591420836342500L;
+            private static final long serialVersionUID = 5630562178464287548L;
             {
                     put( "user-agent", "APIMATIC 2.0" );
                     put( "accept", "application/json" );
@@ -256,7 +256,7 @@ public class WebhookController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
-            private static final long serialVersionUID = 5534236130084151055L;
+            private static final long serialVersionUID = 5530876501058101109L;
             {
                     put( "webhook_id", webhookId );
             }});
@@ -265,7 +265,7 @@ public class WebhookController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-            private static final long serialVersionUID = 5063682833959614658L;
+            private static final long serialVersionUID = 5189907682584285005L;
             {
                     put( "user-agent", "APIMATIC 2.0" );
                     put( "accept", "application/json" );
@@ -353,7 +353,7 @@ public class WebhookController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
-            private static final long serialVersionUID = 5494462675836145920L;
+            private static final long serialVersionUID = 5645542531647955324L;
             {
                     put( "webhook_id", webhookId );
             }});
@@ -362,7 +362,7 @@ public class WebhookController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-            private static final long serialVersionUID = 4657474479270036871L;
+            private static final long serialVersionUID = 4780496924040630310L;
             {
                     put( "user-agent", "APIMATIC 2.0" );
                     put( "X-API-TOKEN", Configuration.xAPITOKEN );
@@ -447,7 +447,7 @@ public class WebhookController extends BaseController {
 
         //process template parameters
         APIHelper.appendUrlWithTemplateParameters(_queryBuilder, new HashMap<String, Object>() {
-            private static final long serialVersionUID = 5690420992721312243L;
+            private static final long serialVersionUID = 5460844192504779192L;
             {
                     put( "id", id );
             }});
@@ -456,7 +456,7 @@ public class WebhookController extends BaseController {
 
         //load all headers for the outgoing API request
         Map<String, String> _headers = new HashMap<String, String>() {
-            private static final long serialVersionUID = 5259304649705441445L;
+            private static final long serialVersionUID = 5491051271299173334L;
             {
                     put( "user-agent", "APIMATIC 2.0" );
                     put( "accept", "application/json" );

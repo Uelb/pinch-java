@@ -1,7 +1,7 @@
 /*
  * PinchLib
  *
- * This file was automatically generated for Pinch by APIMATIC v2.0 ( https://apimatic.io ) on 05/25/2016
+ * This file was automatically generated for Pinch by APIMATIC v2.0 ( https://apimatic.io ) on 06/01/2016
  */
 package com.inchbase.pinch.models;
 
@@ -16,6 +16,11 @@ public class DocumentBuilder {
      */
     public DocumentBuilder() {
         document = new Document();
+    }
+
+    public DocumentBuilder name(String name) {
+        document.setName(name);
+        return this;
     }
     /**
      * Build the instance with the given values
